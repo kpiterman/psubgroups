@@ -1,12 +1,12 @@
 
 
-# The Posets package
+# Posets2 package - An extension of the original Poset package
 
-* Website: https://github.com/kpiterman/psubgroups
-* Documentation: http://mate.dm.uba.ar/~kpiterman/psubgroup_package
-* Repository: https://github.com/kpiterman/psubgroups
+* Website: https://github.com/kpiterman/Posets2
+* Documentation: http://mate.dm.uba.ar/~kpiterman/posets2
+* Repository: https://github.com/kpiterman/Posets2
 
-Working with p-subgroup posets to test topological and combinatorial properties related to Quillen's conjecture.
+Working with p-subgroup posets, decomposition posets, frame complexes and more.
 
 
 ## Author:
@@ -15,10 +15,10 @@ Working with p-subgroup posets to test topological and combinatorial properties 
 
 Start GAP and type
 
-	LoadPackage("psubgroups");
+	LoadPackage("posets2");
 
-to load the package.
+to load the package. This package requires the original Poset package.
 
-For details on how to use the p-subgroup package see the package
+For details on how to use the Posets2 package see the package
 documentation in the `doc` subdirectory (view its HTML version or 
 `manual.pdf`  via a PDF viewer).
