@@ -7,19 +7,19 @@
 
 SetPackageInfo( rec(
 
-PackageName := "p-subgroups",
+PackageName := "posets2",
 
-Subtitle := "Working with posets of p-subgroups of a finite group.",
+Subtitle := "Working p-subgroup posets, decomposition posets and frame complexes",
 
 
 Version := "1.0.0",
 Date := "01/06/2024",
 
-PackageWWWHome := "https://github.com/kpiterman/psubgroups",
+PackageWWWHome := "https://github.com/kpiterman/posets2",
 
 SourceRepository := rec(
     Type := "git",
-    URL := "https://github.com/kpiterman/psubgroups",
+    URL := "https://github.com/kpiterman/posets2",
 ),
 IssueTrackerURL := Concatenation( ~.SourceRepository.URL, "/issues" ),
 SupportEmail := "kpiterman@dm.uba.ar",
@@ -59,7 +59,7 @@ PackageInfoURL :=
   Concatenation( ~.PackageWWWHome, "/PackageInfo.g" ),
 
 AbstractHTML := 
-  "Working with posets of p-subgroups of a finite group.",
+  "Working p-subgroup posets, decomposition posets and frame complexes.",
 
 
 PackageDoc := rec(
@@ -88,17 +88,17 @@ AvailabilityTest := ReturnTrue,
 
 BannerString := Concatenation( 
     "─────────────────────────────────────────────────────────────────────────────\n",
-    "Loading  p-subgroup package- ", ~.Version, "\n",
+    "Loading  Posets2 package- ", ~.Version, "\n",
     "by ",
     JoinStringsWithSeparator( List( Filtered( ~.Persons, r -> r.IsAuthor ),
                                     r -> Concatenation(
         r.FirstNames, " ", r.LastName, " (", r.WWWHome, ")\n" ) ), "   " ),
-    "For help, type: ?Psubgroups \n",
+    "For help, type: ?Posets2 \n",
     "─────────────────────────────────────────────────────────────────────────────\n" ),
 
 Autoload := false,
 
-Keywords := ["p-subgroups", "posets", "Quillen's conjecture" ]
+Keywords := ["p-subgroups", "posets", "decompositions", "frame complex" ]
 
 ));
 
