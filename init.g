@@ -1,6 +1,6 @@
 #############################################################################
 ##
-#W    init.g	  The p-subgroup package		 
+#W    init.g	  The Posets2 package		 
 #W
 ##
 
