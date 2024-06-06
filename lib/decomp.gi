@@ -148,7 +148,7 @@ InstallMethod(PDOfPoset,
 function(P)
 	local decomp;
     decomp := DecompositionsOfPoset(P);
-    return Set(Concatenation(List(decomp, d->Concatenation([1..Size(d)], i->Combinations(d,i)))));
+    return Set(Concatenation(List(decomp, d->Concatenation(List([1..Size(d)], i->Combinations(d,i))))));
 end);
 
 
@@ -158,7 +158,7 @@ InstallMethod(PDOfMatroid,
 function(P)
 	local decomp;
     decomp := DecompositionsOfMatroid(P);
-    return Set(Concatenation(List(decomp, d->Concatenation([1..Size(d)], i->Combinations(d,i)))));
+    return Set(Concatenation(List(decomp, d->Concatenation(List([1..Size(d)], i->Combinations(d,i))))));
 end);
 
 
