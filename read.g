@@ -1,6 +1,6 @@
 #############################################################################
 ##
-#W   read.g	  p-subgroup package         
+#W   read.g	  The Posets2 package         
 #W
 ## 
 ## 
@@ -9,11 +9,11 @@
 ##
 #R  Read the install files.
 ##
-ReadPackage( "p-subgroups", "lib/posets.gi" );
-ReadPackage( "p-subgroups", "lib/psubgroups.gi" );
-ReadPackage( "p-subgroups", "lib/utils.gi" );
-ReadPackage( "p-subgroups", "lib/decomp.gi" );
-ReadPackage( "p-subgroups", "lib/partitionsB.gi" );
-ReadPackage( "p-subgroups", "lib/vectorspaces.gi" );
+ReadPackage( "posets2", "lib/posets.gi" );
+ReadPackage( "posets2", "lib/psubgroups.gi" );
+ReadPackage( "posets2", "lib/utils.gi" );
+ReadPackage( "posets2", "lib/decomp.gi" );
+ReadPackage( "posets2", "lib/partitionsB.gi" );
+ReadPackage( "posets2", "lib/vectorspaces.gi" );
 #E  read.g . . . . . . . . . . . . . . . . . . . . . . . . . . . .  ends here
 
