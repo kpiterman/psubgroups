@@ -3,14 +3,14 @@ InstallMethod(IsFinerSetOfSubsetsPoset,
 "for Poset, Object, Object",
 [IsPoset, IsObject, IsObject],
 function(P, y, x)
-	return ForAll(x, s-> ForAny(y, t-> Ordering(P)(t,s)));
+	return ForAll(x, s->ForAny(y, t->Ordering(P)(t,s)));
 end);
 
 InstallMethod(IsFinerSets,
 "for List, List",
 [IsList, IsList],
 function(y, x)
-	return ForAll(x, s-> ForAny(y, t-> IsSubset(t,s)));
+	return ForAll(x, s->ForAny(y, t->ForAll(s,a->a in t)));
 end);
 
 InstallMethod(RefinementOrdering,

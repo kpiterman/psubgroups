@@ -41,10 +41,15 @@ InstallMethod(TypeBPartitionLattice,
 "for Integer",
 [IsInt],
 function(n)
-    local P;
+    local P,i,x;
     P:=PosetByFunctionNC(TypeBPartitions(n), IsFinerSets);
-    SetGrading(P,x->n-(Size(x)-1)/2);
-	SetHeights(P);
+    #SetGrading(P,x->n-(Size(x)-1)/2);
+	#SetHeights(P);
+	P!.heights:=List(Set(P),x->-1);
+	for i in [1..Size(P)] do
+		x:=Set(P)[i];
+		P!.heights[i]:=n-(Size(x)-1)/2;
+	od;
     return P;
 end);
 

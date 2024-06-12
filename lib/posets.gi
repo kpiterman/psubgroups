@@ -9,8 +9,8 @@ SetHeights := function(P)
 		Sort(gradings);
 		for i in [1..Size(P)] do
 			x:=Set(P)[i];
-			k:=PositionSorted(Set(P),x);
-			P!.heights[k]:=PositionSorted(gradings, P!.Grading(x))-1;
+			k:=Position(Set(P),x);
+			P!.heights[k]:=Position(gradings, P!.Grading(x))-1;
 		od;
 	else
 		for x in Set(P) do
