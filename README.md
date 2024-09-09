@@ -1,10 +1,10 @@
 
 
-# Posets2 package - An extension of the original Poset package
+# FASTPASC package - From Algebraic Structures To Posets And Simplicial Complexes
 
-* Website: https://github.com/kpiterman/Posets2
-* Documentation: http://mate.dm.uba.ar/~kpiterman/posets2
-* Repository: https://github.com/kpiterman/Posets2
+* Website: https://github.com/kpiterman/FASTPASC
+* Documentation: http://mate.dm.uba.ar/~kpiterman/FASTPASC
+* Repository: https://github.com/kpiterman/FASTPASC
 
 Working with p-subgroup posets, decomposition posets, frame complexes and more.
 
@@ -15,10 +15,10 @@ Working with p-subgroup posets, decomposition posets, frame complexes and more.
 
 Start GAP and type
 
-	LoadPackage("posets2");
+	LoadPackage("FASTPASC");
 
 to load the package. This package requires the original Poset package.
 
-For details on how to use the Posets2 package see the package
+For details on how to use the FASTPASC package see the package
 documentation in the `doc` subdirectory (view its HTML version or 
 `manual.pdf`  via a PDF viewer).
