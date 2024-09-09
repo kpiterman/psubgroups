@@ -1,28 +1,28 @@
 #############################################################################
 ##  
-##  PackageInfo.g for the package `P-subgroups'             												   
+##  PackageInfo.g for the package `From Algebraic Structures To Posets And Simplicial Complexes'             												   
 ##														Kevin Ivan Piterman
 ##
 ##
 
 SetPackageInfo( rec(
 
-PackageName := "posets2",
+PackageName := "FASTPASC",
 
-Subtitle := "Working p-subgroup posets, decomposition posets and frame complexes",
+Subtitle := "Working with p-subgroup posets, decomposition posets, frame complexes, and more",
 
 
 Version := "1.0.0",
 Date := "01/06/2024",
 
-PackageWWWHome := "https://github.com/kpiterman/posets2",
+PackageWWWHome := "https://github.com/kpiterman/FASTPASC",
 
 SourceRepository := rec(
     Type := "git",
-    URL := "https://github.com/kpiterman/posets2",
+    URL := "https://github.com/kpiterman/FASTPASC",
 ),
 IssueTrackerURL := Concatenation( ~.SourceRepository.URL, "/issues" ),
-SupportEmail := "kpiterman@dm.uba.ar",
+SupportEmail := "kevin.piterman@vub.be",
 
 ArchiveURL := Concatenation( ~.SourceRepository.URL,
                                  "/releases/download/v", ~.Version,
@@ -39,14 +39,14 @@ Persons := [
     FirstNames    := "Kevin Ivan",
     IsAuthor      := true,
     IsMaintainer  := true,
-    Email         := "kpiterman@dm.uba.ar",
+    Email         := "kevin.piterman@vub.be",
     WWWHome       := "http://mate.dm.uba.ar/~kpiterman",
     PostalAddress := Concatenation( [
-                       "Philipps-University Marburg\n",
-                       "Marburg\n",
-                       "Germany" ] ),
-    Place         := "Marburg",
-    Institution   := "Philipps-University Marburg"
+                       "Pleinlaan 2, B-1050\n",
+                       "VUB, Department of Mathematics and Data Science\n",
+                       "Belgium" ] ),
+    Place         := "Brussels",
+    Institution   := "Vrije Universiteit Brussel"
   ), 
 ],
 
@@ -59,7 +59,7 @@ PackageInfoURL :=
   Concatenation( ~.PackageWWWHome, "/PackageInfo.g" ),
 
 AbstractHTML := 
-  "Working p-subgroup posets, decomposition posets and frame complexes.",
+  "Working with p-subgroup posets, decomposition posets, frame complexes, and more",
 
 
 PackageDoc := rec(
@@ -88,12 +88,12 @@ AvailabilityTest := ReturnTrue,
 
 BannerString := Concatenation( 
     "─────────────────────────────────────────────────────────────────────────────\n",
-    "Loading  Posets2 package- ", ~.Version, "\n",
+    "Loading  FASTPASC package- ", ~.Version, "\n",
     "by ",
     JoinStringsWithSeparator( List( Filtered( ~.Persons, r -> r.IsAuthor ),
                                     r -> Concatenation(
         r.FirstNames, " ", r.LastName, " (", r.WWWHome, ")\n" ) ), "   " ),
-    "For help, type: ?Posets2 \n",
+    "For help, type: ?FASTPASC \n",
     "─────────────────────────────────────────────────────────────────────────────\n" ),
 
 Autoload := false,
