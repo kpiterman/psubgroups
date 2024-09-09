@@ -1,6 +1,6 @@
 #############################################################################
 ##
-#W    init.g	  The Posets2 package		 
+#W    init.g	  The FASTPASC package		 
 #W
 ##
 
@@ -9,11 +9,11 @@
 ##
 #R  Read the declaration files.
 ##
-ReadPackage( "posets2", "lib/posets.gd" );
-ReadPackage( "posets2", "lib/psubgroups.gd" );
-ReadPackage( "posets2", "lib/utils.gd" );
-ReadPackage( "posets2", "lib/decomp.gd" );
-ReadPackage( "posets2", "lib/partitionsB.gd" );
-ReadPackage( "posets2", "lib/vectorspaces.gd" );
+ReadPackage( "FASTPASC", "lib/posets.gd" );
+ReadPackage( "FASTPASC", "lib/psubgroups.gd" );
+ReadPackage( "FASTPASC", "lib/utils.gd" );
+ReadPackage( "FASTPASC", "lib/decomp.gd" );
+ReadPackage( "FASTPASC", "lib/partitionsB.gd" );
+ReadPackage( "FASTPASC", "lib/vectorspaces.gd" );
 #E  init.g . . . . . . . . . . . . . . . . . . . . . . . . . . . .  ends here
 
