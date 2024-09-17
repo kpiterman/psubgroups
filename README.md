@@ -1,6 +1,6 @@
 
 
-# FASTPASC package - From Algebraic Structures To Posets And Simplicial Complexes
+# FASTPASC - From Algebraic Structures To Posets And Simplicial Complexes
 
 * Website: https://github.com/kpiterman/FASTPASC
 * Documentation: http://mate.dm.uba.ar/~kpiterman/FASTPASC
