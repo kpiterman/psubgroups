@@ -2,12 +2,11 @@ InstallMethod(TypeAPartitionLattice,
 "for Integer",
 [IsInt],
 function(n)
-	local ord, P;
+	local ord, P, i;
 	P:=PosetByFunctionNC(PartitionsSet([1..n]), IsFinerSets);;
 	P!.heights:=List(Set(P),x->-1);
 	for i in [1..Size(P)] do
-		x:=Set(P)[i];
-		P!.heights[i]:=n-Size(x);
+		P!.heights[i]:=n-Size(Set(P)[i]);
 	od;
 	return P;
 end;)
